@@ -1,0 +1,98 @@
+*,
+*::before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.logo img {
+    height: 100px;
+    width: 300px;
+    margin-left: 42%;
+    margin-top: 25px;
+}
+
+.cont {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.navbar-section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.container {
+    height: 15vh;
+    width: 70vh;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.container a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: darkgray;
+    position: relative;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+.container a:hover {
+    color: white;
+}
+
+.container a:after {
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+
+.container a:hover:after {
+    width: 100%;
+}
+
+.welcome{
+    color: white;
+    text-decoration: underline #ff3c78;
+    font-size: 24px;
+    display: inline-table;
+}
+
+.text1 {
+    height: 100vh;
+    display: block;
+}
+
+.text1-section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.text1 article {
+    width: 650px;
+    margin: 100px;
+    padding: 150px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text1 h1{
+    color: white;
+    text-decoration: underline #ff3c78;
+    font-size: 35px;
+    margin-top: 200px;
+}
